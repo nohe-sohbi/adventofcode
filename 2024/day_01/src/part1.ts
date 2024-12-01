@@ -3,7 +3,7 @@ const fs             = require('fs');
 
 const main = async () => {
     // get the numbers
-    const list = await fs.promises.readFile('input.txt','utf8',function (err: Error,data: string) {
+    const list = await fs.promises.readFile('exemple.txt','utf8',function (err: Error,data: string) {
         // check if we can access properly the file
         if(err) console.error('error while opening file');
     });
